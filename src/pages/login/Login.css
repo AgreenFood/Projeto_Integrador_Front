@@ -1,0 +1,8 @@
+.fundoLogin {
+    background-image: url("/src/assets/img/Farmers_market.gif");
+    background-repeat: no-repeat;
+    min-height: 75vh;
+    width: 70%;
+    background-size: cover;
+    background-position: center;
+}

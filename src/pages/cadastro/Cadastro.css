@@ -1,0 +1,8 @@
+.fundoCadastro {
+    background-image: url(/src/assets/img/coffee_farm.gif);
+    background-repeat: no-repeat;
+    width: 60%;
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
