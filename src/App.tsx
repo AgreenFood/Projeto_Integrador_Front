@@ -13,7 +13,11 @@ import HomeLogado from './pages/homeLogado/HomeLogado'
 import FormularioCategoria from './components/categorias/formularioCategoria/FormularioCategoria';
 import ListaCategoria from './components/categorias/listaCategoria/ListaCategoria';
 import DeletarCategoria from './components/categorias/deletarCategoria/DeletarCategoria';
+<<<<<<< HEAD
 import FormularioProduto from './components/produto/formularioProduto/FormularioProduto';
+=======
+import ListaProdutos from './components/produtos/listaProdutos/ListaProdutos';
+>>>>>>> 3989de0b77f16252a5d0f4e0d30b9b6b6c224b50
 
 
 function App() {
@@ -34,8 +38,13 @@ function App() {
             <Route path='/categorias' element={<ListaCategoria />} />
             <Route path='/editarCategoria/:id' element={<FormularioCategoria />} />
             <Route path="/deletarCategoria/:id" element={<DeletarCategoria />} />
+<<<<<<< HEAD
             <Route path="/cadastroProduto" element={<FormularioProduto />} />
             <Route path="/editarProduto/:id" element={<FormularioProduto />} />
+=======
+
+            <Route path='/produtos' element={<ListaProdutos />} />
+>>>>>>> 3989de0b77f16252a5d0f4e0d30b9b6b6c224b50
           </Routes>
         </div>
         <Footer />
