@@ -14,7 +14,7 @@ import FormularioCategoria from './components/categorias/formularioCategoria/For
 import ListaCategoria from './components/categorias/listaCategoria/ListaCategoria';
 import DeletarCategoria from './components/categorias/deletarCategoria/DeletarCategoria';
 import ListaProdutos from './components/produtos/listaProdutos/ListaProdutos';
-import FormularioProduto from './components/produto/formularioProduto/FormularioProduto';
+import FormularioProduto from './components/produtos/formularioProduto/FormularioProduto';
 
 
 

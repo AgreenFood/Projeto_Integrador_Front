@@ -29,7 +29,7 @@ function FormularioProduto() {
     }
 
     async function buscarCategoriaPorId(id: string) {
-        await buscar(`/categorias/${id}`, setCategoria, {
+        await buscar(`/categorias/${id}`, setCategorias, {
             headers: {
                 Authorization: token,
             },
@@ -37,7 +37,7 @@ function FormularioProduto() {
     }
 
     async function buscarCategoria() {
-        await buscar('/categorias', setCategoria, {
+        await buscar('/categorias', setCategorias, {
             headers: {
                 Authorization: token,
             },
@@ -199,20 +199,15 @@ function FormularioProduto() {
 
                 <div className="flex flex-col gap-2">
                     <p>Categoria do Produto</p>
-                    <select name="categoria" id="categoria" onChange={(e) => buscarCategoriaPorId(e.currentTarget.value)} className='border p-2 border-slate-800 rounded' >
-                        <option value="" selected disabled>Selecione uma Categoria</option>
+                    <select name="categoria" id="categoria" className="border p-2 border-slate-800 rounded" 
+                        onChange={(e) => buscarCategoriaPorId(e.currentTarget.value)} >
+                        <option value={categoria.id} selected disabled>Selecione uma Categoria</option>
+                        {categorias.map((categoria) => (
+                            <>
+                                <option value={categoria.id}>{categoria.tipo}</option>
+                            </>
+                        ))}
 
-                        <select name="tema" id="tema" className='border p-2 border-slate-800 rounded'
-                            onChange={(e) => buscarCategoriaPorId(e.currentTarget.value)}
-                        >
-                            <option value="" selected disabled>Selecione um Tema</option>
-                            {categorias.map((categoria) => (
-                                <>
-                                    <option value={categoria.id} >{categoria.tipo}</option>
-                                </>
-                            ))}
-
-                        </select>
                     </select>
                 </div>
                 <button
