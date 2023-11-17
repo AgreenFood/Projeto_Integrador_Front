@@ -2,9 +2,9 @@ import { useContext, useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import Categoria from "../../../models/Categoria"
 import { AuthContext } from "../../../contexts/AuthContext"
-import { deletar, buscar } from "../../../services/Service"
+import { deletar} from "../../../services/Service"
 import { RotatingLines } from "react-loader-spinner"
-
+import { buscar } from "../../../services/Service"
 
 function DeletarCategoria() {
 
@@ -20,7 +20,7 @@ function DeletarCategoria() {
 
     async function buscarPorId(id: string) {
         try {
-            await buscar(`/categoria/${id}`, setCategoria, {
+            await buscar(`/categorias/${id}`, setCategoria, {
                 headers: {
                     'Authorization': token
                 }
@@ -50,7 +50,7 @@ function DeletarCategoria() {
         setIsLoading(true)
 
         try {
-            await deletar(`/categoria/${id}`, {
+            await deletar(`/categorias/${id}`, {
                 headers: {
                     'Authorization': token
                 }

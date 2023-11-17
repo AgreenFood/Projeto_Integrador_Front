@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import ListaProdutos from "../../components/produtos/listaProdutos/ListaProdutos"
 
 function Home() {
 
@@ -12,9 +13,13 @@ function Home() {
                         <h2 className="text-5xl font-bold">AGreenFood!</h2>
                         <p className="text-xl font-montserrat font-bold me-0">Do campo direto para a sua mesa!</p>
 
+                        <div>
+                            AQUI
+                        </div>
+
                         <div className="flex justify-center">
                             <img
-                                src="..\..\src\assets\img\farmer.gif"
+                                src="....\src\assets\img\farmer.gif"
                                 alt="Imagem da Home"
                                 width='400px'
                             />
@@ -22,17 +27,26 @@ function Home() {
 
                     </div>
 
-                    <div className="flex justify-center items-center">
-                        <Link to={`/login`}>
-                        <button className="h-24 w-5/6 m-10 border rounded-2xl bg-android-verde hover:bg-green-900 text-white font-montserrat font-bold uppercase">Login</button>
+                    <div className="flex justify-center items-center ">
+
+                        <Link to="/CadastroCategoria">
+                            <button className="h-20 m-10 border rounded-2xl bg-android-verde hover:bg-green-900 text-white font-montserrat font-bold uppercase">
+                                <p className="mx-4">Nova Categoria</p>
+                            </button>
                         </Link>
-                        <Link to={`/cadastro`}>
-                        <button className="h-24 w-2/4 m-20 border rounded-2xl bg-android-verde hover:bg-green-900 text-white font-montserrat font-bold uppercase">Cadastrar</button>
+
+                        <Link to="/produtos">
+                            <button className="h-20 m-10 border rounded-2xl bg-android-verde hover:bg-green-900 text-white font-montserrat font-bold uppercase">
+                                <p className="mx-4">Novo Produto</p>
+                            </button>
                         </Link>
+
                     </div>
 
                 </div>
             </div>
+
+            <ListaProdutos />
 
         </>
     )
