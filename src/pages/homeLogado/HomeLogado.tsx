@@ -35,9 +35,9 @@ function Home() {
                             </button>
                         </Link>
 
-                        <Link to="/produtos">
+                        <Link to="/cadastroProduto">
                             <button className="h-20 m-10 border rounded-2xl bg-android-verde hover:bg-green-900 text-white font-montserrat font-bold uppercase">
-                                <p className="mx-4">Nova Produto</p>
+                                <p className="mx-4">Novo Produto</p>
                             </button>
                         </Link>
 
