@@ -10,8 +10,8 @@ import Equipe from './components/equipe/Equipe';
 import Login from './pages/login/Login';
 import Cadastro from './pages/cadastro/Cadastro';
 import HomeLogado from './pages/homeLogado/HomeLogado'
-import DeletarCategoria from './components/categorias/deletarCategoria/DeletarCategoria';
-
+import FormularioCategoria from './components/categorias/formularioCategoria/FormularioCategoria';
+import ListaCategoria from './components/categorias/listaCategoria/ListaCategoria';
 
 
 function App() {
@@ -28,7 +28,8 @@ function App() {
             <Route path='/equipe' element={<Equipe />} />
             <Route path='/login' element={<Login />} />
             <Route path="/cadastro" element={<Cadastro />} />
-            <Route path="/deletarCategoria/:id" element={<DeletarCategoria />} />
+            <Route path="/cadastroCategoria" element={<FormularioCategoria />} />
+            <Route path='/editarCategoria/:id' element={<FormularioCategoria />} />
           </Routes>
         </div>
         <Footer />

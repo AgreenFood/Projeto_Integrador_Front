@@ -69,7 +69,7 @@ function DeletarCategoria() {
     }
 
     function retornar() {
-        navigate("/categoria")
+        navigate("/categorias")
     }
     return (
         <div className='container w-1/3 mx-auto'>

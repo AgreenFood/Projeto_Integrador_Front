@@ -70,3 +70,5 @@ function ListaCategoria() {
         </>
     )
 }
+
+export default ListaCategoria
