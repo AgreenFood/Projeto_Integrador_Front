@@ -34,7 +34,7 @@ function Navbar() {
                                 <Link to="/CadastroCategoria" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Categorias</Link>
                             </li>
                             <li>
-                                <Link to="/home" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Produtos</Link>
+                                <Link to="/produtos" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Produtos</Link>
                             </li>
                             <li>
                                 <Link to="/sobre" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Sobre</Link>
