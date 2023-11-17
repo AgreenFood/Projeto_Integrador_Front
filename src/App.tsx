@@ -10,6 +10,8 @@ import Equipe from './components/equipe/Equipe';
 import Login from './pages/login/Login';
 import Cadastro from './pages/cadastro/Cadastro';
 import HomeLogado from './pages/homeLogado/HomeLogado'
+import DeletarCategoria from './components/categorias/deletarCategoria/DeletarCategoria';
+
 
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
             <Route path='/equipe' element={<Equipe />} />
             <Route path='/login' element={<Login />} />
             <Route path="/cadastro" element={<Cadastro />} />
+            <Route path="/deletarCategoria/:id" element={<DeletarCategoria />} />
           </Routes>
         </div>
         <Footer />
