@@ -13,6 +13,7 @@ import HomeLogado from './pages/homeLogado/HomeLogado'
 import FormularioCategoria from './components/categorias/formularioCategoria/FormularioCategoria';
 import ListaCategoria from './components/categorias/listaCategoria/ListaCategoria';
 import DeletarCategoria from './components/categorias/deletarCategoria/DeletarCategoria';
+import ListaProdutos from './components/produtos/listaProdutos/ListaProdutos';
 
 
 function App() {
@@ -33,6 +34,8 @@ function App() {
             <Route path='/categorias' element={<ListaCategoria />} />
             <Route path='/editarCategoria/:id' element={<FormularioCategoria />} />
             <Route path="/deletarCategoria/:id" element={<DeletarCategoria />} />
+
+            <Route path='/produtos' element={<ListaProdutos />} />
           </Routes>
         </div>
         <Footer />
