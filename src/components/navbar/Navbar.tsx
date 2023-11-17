@@ -31,7 +31,7 @@ function Navbar() {
                                 <a href="/home" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Home</a>
                             </li>
                             <li>
-                                <a href="/home" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Categoria</a>
+                                <a href="/cadastroCategoria" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Cadastrar Categoria</a>
                             </li>
                             <li>
                                 <a href="/home" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Produtos</a>

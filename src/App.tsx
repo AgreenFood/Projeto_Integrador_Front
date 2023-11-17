@@ -10,6 +10,7 @@ import Equipe from './components/equipe/Equipe';
 import Login from './pages/login/Login';
 import Cadastro from './pages/cadastro/Cadastro';
 import HomeLogado from './pages/homeLogado/HomeLogado'
+import FormularioCategoria from './components/categorias/formularioCategoria/FormularioCategoria';
 
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
             <Route path='/equipe' element={<Equipe />} />
             <Route path='/login' element={<Login />} />
             <Route path="/cadastro" element={<Cadastro />} />
+            <Route path='/cadastroCategoria' element={<FormularioCategoria />} />
+            <Route path='/editarCategoria/:id' element={<FormularioCategoria />} />
           </Routes>
         </div>
         <Footer />
