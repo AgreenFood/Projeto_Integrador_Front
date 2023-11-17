@@ -19,13 +19,8 @@ function CardProdutos({post}: CardProdutosProps) {
                     <p>{post.descricao}:</p>
                     <p>{post.valor}</p>
                     <p>{post.quantidade}</p>
-                    <p>{post.foto}</p>
                     <p>{post.vendedor}</p>
                     <p>Categoria: {post.categoria?.tipo} </p>
-                    <p>Data: {new Intl.DateTimeFormat(undefined, {
-                        dateStyle: 'full',
-                        timeStyle: 'medium',
-                    }).format(new Date(post.data))} </p>
                 </div>
             </div>
             <div className="flex">
@@ -33,7 +28,7 @@ function CardProdutos({post}: CardProdutosProps) {
                     <button>Editar</button>
                 </Link>
                 <Link to={`/deletarPostagem/${post.id}`} className="text-white bg-castanha-profunda hover:bg-red-700 w-full flex items-center justify-center py-2">
-                    <button>Editar</button>
+                    <button>Deletar</button>
                 </Link>
             </div>
 
