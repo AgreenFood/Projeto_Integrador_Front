@@ -1,11 +1,9 @@
-import Categoria from "../../../models/Categoria";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
-
-import { buscar, deletar } from "../../../services/Service";
-import { AuthContext } from "../../../contexts/AuthContext";
-import { RotatingLines } from "react-loader-spinner";
-
+import Categoria from "../../../models/Categoria"
+import { AuthContext } from "../../../contexts/AuthContext"
+import { deletar, buscar } from "../../../services/Service"
+import { RotatingLines } from "react-loader-spinner"
 
 
 function DeletarCategoria() {
