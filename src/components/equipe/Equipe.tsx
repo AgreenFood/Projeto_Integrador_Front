@@ -1,120 +1,85 @@
-import { Carousel, Typography, Button } from "@material-tailwind/react";
- 
-export function Equipe() {
+import 'bootstrap/dist/css/bootstrap.css';
+import Carousel from 'react-bootstrap/Carousel';
+
+export default function Equipe() {
   return (
-    <Carousel>
-      <div className="relative align-center">
-        <img
-          src="..\..\src\assets\img\equipe\elisa_souza.jpg"
-          alt="image 1"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
-          <div className="w-3/4 text-center md:w-2/4">
-            <Typography
-              variant="h1"
-              color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
-            >
-              Elisa Souza
-            </Typography>
-            <Typography
-              variant="lead"
-              color="white"
-              className="mb-12 opacity-80"
-            >
-              It is not so much for its beauty that the forest makes a claim
-              upon men&apos;s hearts, as for that subtle something, that quality
-              of air that emanation from old trees, that so wonderfully changes
-              and renews a weary spirit.
-            </Typography>
-            <div className="flex justify-center gap-2">
-              <Button size="lg" color="white">
-                Linkedin
-              </Button>
-              <Button size="lg" color="white" variant="text">
-                Github
-              </Button>
-            </div>
-          </div>
-        </div>
+    <div className='flex grid-cols-2'>
+    <div className='block w-1/2 p-30' >
+      <Carousel fade>
+        <Carousel.Item interval={3500}>
+          <img
+            className="d-block w-100"
+            src="..\..\src\assets\img\equipe\elisa_souza.jpg"
+            alt="Elisa Souza"
+          />
+          <Carousel.Caption>
+            <h1 className='mb-4 text-white text-3xl md:text-4xl lg:text-5xl'>Elisa Souza</h1>
+            <p>Dev Jr com ascendência em Sr</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={3500}>
+          <img
+            className="d-block w-100"
+            src="..\..\src\assets\img\equipe\gabriel_assis.jpg"
+            alt="Gabriel Assis"
+          />
+          <Carousel.Caption>
+            <h1 className='mb-4 text-white text-3xl md:text-4xl lg:text-5xl'>Gabriel Assis</h1>
+            <p>Dev Jr com ascendência em Sr</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={3500}>
+          <img
+            className="d-block w-100"
+            src="..\..\src\assets\img\equipe\katia_mendes.jpg"
+            alt="Katia Mendes"
+          />
+          <Carousel.Caption>
+            <h1 className='mb-4 text-white text-3xl md:text-4xl lg:text-5xl'>Katia Mendes</h1>
+            <p>Dev Jr com ascendência em Sr</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={3500}>
+          <img
+            className="d-block w-100"
+            src="..\..\src\assets\img\equipe\olavo_pessoa.jpg"
+            alt="Olavo Pessôa"
+          />
+          <Carousel.Caption>
+            <h1 className='mb-4 text-white text-3xl md:text-4xl lg:text-5xl'>Olavo Pessôa</h1>
+            <p>Dev Jr com ascendência em Sr</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={3500}>
+          <img
+            className="d-block w-100"
+            src="..\..\src\assets\img\equipe\raphael_gomes.jpg"
+            alt="Raphael Gomes"
+          />
+          <Carousel.Caption>
+            <h1 className='mb-4 text-white text-3xl md:text-4xl lg:text-5xl'>Raphael Gomes</h1>
+            <p>Apenas um dev</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={3500}>
+          <img
+            className="d-block w-100"
+            src="..\..\src\assets\img\equipe\raquel_barreto.jpg"
+            alt="Raquel Barreto"
+          />
+          <Carousel.Caption>
+            <h1 className='mb-4 text-white text-3xl md:text-4xl lg:text-5xl'>Raquel Barreto</h1>
+            <p>Que Deus a tenha</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </div>
+    <div className='grid place-items-center'>
+      <div className='text-center'>
+        <h1>Equipe 5 do Projeto Integrador</h1>
+      <p>Equipe composta por Elisa Souza, Gabriel Assis, Katia Mendes, Olavo Pessôa e Raphael Gomes</p>
       </div>
-      <div className="relative h-full w-full">
-        <img
-          src="..\..\src\assets\img\equipe\gabriel_assis.jpg"
-          alt="image 2"
-          className="h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 grid h-full w-full items-center bg-black/75">
-          <div className="w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32">
-            <Typography
-              variant="h1"
-              color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
-            >
-              The Beauty of Nature
-            </Typography>
-            <Typography
-              variant="lead"
-              color="white"
-              className="mb-12 opacity-80"
-            >
-              It is not so much for its beauty that the forest makes a claim
-              upon men&apos;s hearts, as for that subtle something, that quality
-              of air that emanation from old trees, that so wonderfully changes
-              and renews a weary spirit.
-            </Typography>
-            <div className="flex gap-2">
-              <Button size="lg" color="white">
-                Explore
-              </Button>
-              <Button size="lg" color="white" variant="text">
-                Gallery
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="relative h-full w-full">
-        <img
-          src="..\..\src\assets\img\equipe\katia_mendes.jpg"
-          alt="image 3"
-          className="h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
-          <div className="w-3/4 pl-12 pb-12 md:w-2/4 md:pl-20 md:pb-20 lg:pl-32 lg:pb-32">
-            <Typography
-              variant="h1"
-              color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
-            >
-              The Beauty of Nature
-            </Typography>
-            <Typography
-              variant="lead"
-              color="white"
-              className="mb-12 opacity-80"
-            >
-              It is not so much for its beauty that the forest makes a claim
-              upon men&apos;s hearts, as for that subtle something, that quality
-              of air that emanation from old trees, that so wonderfully changes
-              and renews a weary spirit.
-            </Typography>
-            <div className="flex gap-2">
-              <Button size="lg" color="white">
-                Explore
-              </Button>
-              <Button size="lg" color="white" variant="text">
-                Gallery
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Carousel>
+    </div>
+    </div>
   );
 }
-
-
-
-export default Equipe;
