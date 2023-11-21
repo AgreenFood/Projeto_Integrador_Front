@@ -23,7 +23,7 @@ function CardCategoria({ categoria }: CardCategoriaProps) {
                     <button>Editar</button>
                 </Link>
 
-                <Link to={`/deletarcategoria/${categoria.id}`} className="text-slate-100 bg-castanha-profunda hover:bg-red-900 w-full flex items-center justify-center">
+                <Link to={`/deletarCategoria/${categoria.id}`} className="text-slate-100 bg-castanha-profunda hover:bg-red-900 w-full flex items-center justify-center">
                     <button>Deletar</button>
                 </Link>
             </div>
