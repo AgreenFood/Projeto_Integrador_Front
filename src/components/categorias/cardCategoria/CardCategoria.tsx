@@ -27,7 +27,6 @@ function CardCategoria({ categoria }: CardCategoriaProps) {
                     <button>Deletar</button>
                 </Link>
             </div>
-
         </div>
     )
 }
