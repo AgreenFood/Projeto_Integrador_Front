@@ -132,7 +132,7 @@ function FormularioProduto() {
         <div className="container flex flex-col mx-auto items-center">
             <h1 className="text-4xl text-center my-8">Cadastrar Produto</h1>
 
-            <form className="flex flex-col w-1/2 gap-4">
+            <form className="flex flex-col w-1/2 gap-4" onSubmit={gerarNovaProduto}>
                 <div className="flex flex-col gap-2">
                     <label htmlFor="titulo">Nome do Produto</label>
                     <input
