@@ -21,7 +21,7 @@ function FormularioCategoria() {
 
     async function buscarPorId(id: string) {
         try {
-            await buscar("/categorias/${id}", setCategoria, {
+            await buscar(`/categorias/${id}`, setCategoria, {
                 headers: {
                     Authorization: token
                 }
