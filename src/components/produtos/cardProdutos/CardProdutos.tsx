@@ -27,7 +27,7 @@ function CardProdutos({post}: CardProdutosProps) {
                 <Link to={`/editarProduto/${post.id}`} className="w-full text-white bg-verde-leve hover:bg-maio-verde flex items-center justify-center py-2">
                     <button>Editar</button>
                 </Link>
-                <Link to={`/deletarPostagem/${post.id}`} className="text-white bg-castanha-profunda hover:bg-red-700 w-full flex items-center justify-center py-2">
+                <Link to={`/deletarProduto/${post.id}`} className="text-white bg-castanha-profunda hover:bg-red-700 w-full flex items-center justify-center py-2">
                     <button>Deletar</button>
                 </Link>
             </div>

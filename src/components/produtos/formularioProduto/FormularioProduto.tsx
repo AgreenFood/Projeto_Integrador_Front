@@ -104,7 +104,7 @@ function FormularioProduto() {
 
         } else {
             try {
-                await cadastrar(`/produto`, produto, setProduto, {
+                await cadastrar(`/produtos`, produto, setProduto, {
                     headers: {
                         Authorization: token,
                     },
@@ -130,7 +130,9 @@ function FormularioProduto() {
 
     return (
         <div className="container flex flex-col mx-auto items-center">
-            <h1 className="text-4xl text-center my-8">Cadastrar Produto</h1>
+            <h1 className="text-4xl text-center my-8">
+                {id !== undefined ? 'Editar Produto' : 'Cadastrar Produto'}
+            </h1>
 
             <form className="flex flex-col w-1/2 gap-4" onSubmit={gerarNovaProduto}>
                 <div className="flex flex-col gap-2">
@@ -151,7 +153,7 @@ function FormularioProduto() {
                         value={produto.descricao}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="text"
-                        placeholder="Texto"
+                        placeholder="Descrição do Produto"
                         name="texto"
                         required
                         className="border-2 border-slate-700 rounded p-2"
@@ -163,9 +165,10 @@ function FormularioProduto() {
                     <input
                         value={produto.valor}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
-                        type="text"
-                        placeholder="Texto"
-                        name="texto"
+                        type="number"
+                        placeholder="Valor do produto"
+                        name="number"
+                        step="0.01"
                         required
                         className="border-2 border-slate-700 rounded p-2"
                     />
@@ -176,9 +179,9 @@ function FormularioProduto() {
                     <input
                         value={produto.quantidade}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
-                        type="text"
-                        placeholder="Texto"
-                        name="texto"
+                        type="number"
+                        placeholder="Quantidade do produto"
+                        name="number"
                         required
                         className="border-2 border-slate-700 rounded p-2"
                     />
@@ -214,7 +217,7 @@ function FormularioProduto() {
                     type='submit'
                     disabled={carregandoCategoria}
                     className='flex justify-center rounded disabled:bg-slate-200 bg-indigo-400 
-                            hover:bg-indigo-800 text-white font-bold w-1/2 mx-auto py-2'
+                            hover:bg-indigo-800 text-white font-bold w-1/2 mx-auto py-4 my-2'
                 >
                     {isLoading ?
                         <RotatingLines
