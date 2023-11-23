@@ -2,7 +2,7 @@ import { ReactNode, createContext, useState } from "react";
 
 import UsuarioLogin from "../models/UsuarioLogin"
 import { login } from "../services/Service"
-import { toastAlerta } from "../assets/utilis/toastAlerta";
+import { toastAlerta } from "../utilis/toastAlerta";
 
 
 

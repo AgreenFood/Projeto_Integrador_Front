@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import { cadastrarUsuario } from '../../services/Service'
 import Usuario from '../../models/Usuario'
 import './Cadastro.css'
-import { toastAlerta } from '../../assets/utilis/toastAlerta'
+import { toastAlerta } from '../../utilis/toastAlerta'
 
 function Cadastro() {
 
