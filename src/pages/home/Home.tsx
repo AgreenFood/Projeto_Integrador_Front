@@ -19,7 +19,8 @@ function Home() {
 
                         <div className="flex justify-center">
                             <img
-                                src="....\src\assets\img\farmer.gif"
+                                src="https://docs.google.com/uc?id=1t6jWYttF6px5A6m1G5lboD8kPAD3mRgT
+                                "
                                 alt="Imagem da Home"
                                 width='400px'
                             />
