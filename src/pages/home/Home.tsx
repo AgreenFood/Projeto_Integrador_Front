@@ -13,10 +13,6 @@ function Home() {
                         <h2 className="text-5xl font-bold">AGreenFood!</h2>
                         <p className="text-xl font-montserrat font-bold me-0">Do campo direto para a sua mesa!</p>
 
-                        <div>
-                            AQUI
-                        </div>
-
                         <div className="flex justify-center">
                             <img
                                 src="https://docs.google.com/uc?id=1t6jWYttF6px5A6m1G5lboD8kPAD3mRgT
@@ -30,24 +26,12 @@ function Home() {
 
                     <div className="flex justify-center items-center ">
 
-                        <Link to="/CadastroCategoria">
-                            <button className="h-20 m-10 border rounded-2xl bg-android-verde hover:bg-green-900 text-white font-montserrat font-bold uppercase">
-                                <p className="mx-4">Nova Categoria</p>
-                            </button>
-                        </Link>
 
-                        <Link to="/produtos">
-                            <button className="h-20 m-10 border rounded-2xl bg-android-verde hover:bg-green-900 text-white font-montserrat font-bold uppercase">
-                                <p className="mx-4">Novo Produto</p>
-                            </button>
-                        </Link>
 
                     </div>
 
                 </div>
             </div>
-
-            <ListaProdutos />
 
         </>
     )
