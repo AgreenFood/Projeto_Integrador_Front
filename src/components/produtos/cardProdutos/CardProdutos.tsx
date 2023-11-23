@@ -20,7 +20,7 @@ function CardProdutos({post}: CardProdutosProps) {
                     <p>{post.valor}</p>
                     <p>{post.quantidade}</p>
                     <p>{post.vendedor}</p>
-                    <p>Categoria: {post.categoria?.tipo} </p>
+                    <p>Categoria: {post.categorias?.tipo} </p>
                 </div>
             </div>
             <div className="flex">

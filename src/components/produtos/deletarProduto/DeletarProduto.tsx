@@ -18,6 +18,7 @@ function DeletarProduto() {
 
     const { usuario, handleLogout } = useContext(AuthContext)
     const token = usuario.token
+    
     async function buscarPorId(id: string) {
         try {
             await buscar(`/produtos/${id}`, setProduto, {
@@ -44,7 +45,7 @@ function DeletarProduto() {
         if (id !== undefined) {
             buscarPorId(id)
         }
-    })
+    }, [id])
 
     async function deletarProduto() {
         setIsLoading(true)
@@ -57,7 +58,7 @@ function DeletarProduto() {
             })
             alert('Produto deletado com sucesso')
         } catch (error) {
-            alert('Erro ao apagar o Produto')
+            alert('Erro ao deletar o Produto')
         }
 
         setIsLoading(false)
@@ -65,7 +66,7 @@ function DeletarProduto() {
     }
 
     function retornar() {
-        navigate('/produtos')
+        navigate("/produtos")
     }
 
 
