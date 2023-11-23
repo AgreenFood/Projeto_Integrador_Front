@@ -13,7 +13,7 @@ export default function Equipe() {
             <Carousel.Item interval={3500}>
               <img
                 className="d-block w-100"
-                src="..\..\src\assets\img\equipe\elisa_souza.jpg"
+                src="https://docs.google.com/uc?id=1X2YDTq7uHOZcOhfq4VroTDyERLsXNyju"
                 alt="Elisa Souza"
               />
               <Carousel.Caption>
@@ -24,7 +24,7 @@ export default function Equipe() {
             <Carousel.Item interval={3500}>
               <img
                 className="d-block w-100"
-                src="..\..\src\assets\img\equipe\gabriel_assis.jpg"
+                src="https://docs.google.com/uc?id=1cV51LBU_LAKH3UrdUVfxbEZHBo5_UJv4"
                 alt="Gabriel Assis"
               />
               <Carousel.Caption>
@@ -35,7 +35,7 @@ export default function Equipe() {
             <Carousel.Item interval={3500}>
               <img
                 className="d-block w-100"
-                src="..\..\src\assets\img\equipe\katia_mendes.jpg"
+                src="https://docs.google.com/uc?id=14roeltlRhPAfuu4HjcH_Ot1t9dTo4ID2"
                 alt="Katia Mendes"
               />
               <Carousel.Caption>
@@ -46,7 +46,7 @@ export default function Equipe() {
             <Carousel.Item interval={3500}>
               <img
                 className="d-block w-100"
-                src="..\..\src\assets\img\equipe\olavo_pessoa.jpg"
+                src="https://docs.google.com/uc?id=1ftnqFg64PRVca_0uO4u9RwgTd3E8O4vx"
                 alt="Olavo Pessôa"
               />
               <Carousel.Caption>
@@ -57,7 +57,7 @@ export default function Equipe() {
             <Carousel.Item interval={3500}>
               <img
                 className="d-block w-100"
-                src="..\..\src\assets\img\equipe\raphael_gomes.jpg"
+                src="https://docs.google.com/uc?id=1T_bVO8O1mB8-6njV0eUIs0ke6HQTtW8G"
                 alt="Raphael Gomes"
               />
               <Carousel.Caption>
@@ -68,7 +68,7 @@ export default function Equipe() {
             <Carousel.Item interval={3500}>
               <img
                 className="d-block w-100"
-                src="..\..\src\assets\img\equipe\raquel_barreto.jpg"
+                src="https://docs.google.com/uc?id=1uJgc9WsCmBdCly0sWP17ECp5-B4-siH4"
                 alt="Raquel Barreto"
               />
               <Carousel.Caption>
