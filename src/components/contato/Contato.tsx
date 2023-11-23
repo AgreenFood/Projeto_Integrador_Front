@@ -50,8 +50,8 @@ function Contato() {
                                     id="assunto"
                                     name="assunto"
                                     placeholder="Escreva seu assunto aqui"
-                                    cols="30"
-                                    rows="5"
+                                    cols={30}
+                                    rows={5}
                                     required
                                     className="rounded"
                                 ></textarea>
