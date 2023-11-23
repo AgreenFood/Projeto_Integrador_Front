@@ -11,7 +11,7 @@ function Navbar() {
                 <div className="container flex justify-between text-lg">
                     <Link to={`/Home`}>
                         <img
-                            src="..\..\src\assets\img\logo.svg"
+                            src="https://docs.google.com/uc?id=1t6jWYttF6px5A6m1G5lboD8kPAD3mRgT"
                             alt=""
                             width="75rem"
                         />
