@@ -26,9 +26,9 @@ function Home() {
                     <div className="flex justify-center items-center mt-40">
 
                         <Link to="/CadastroCategoria">
-                            <button className="h-20 m-10 my-10 border rounded-2xl bg-android-verde hover:bg-green-900 text-white font-montserrat font-bold uppercase">
+                            {/* <button className="h-20 m-10 my-10 border rounded-2xl bg-android-verde hover:bg-green-900 text-white font-montserrat font-bold uppercase">
                                 <p className="mx-4">Nova Categoria</p>
-                            </button>
+                            </button> */}
                         </Link>
 
                         <Link to="/cadastroProduto">

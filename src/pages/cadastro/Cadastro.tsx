@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import { cadastrarUsuario } from '../../services/Service'
 import Usuario from '../../models/Usuario'
 import './Cadastro.css'
+import { toastAlerta } from '../../assets/utilis/toastAlerta'
 
 function Cadastro() {
 
@@ -54,20 +55,21 @@ function Cadastro() {
             setIsLoading(true)
 
             try {
-                await cadastrarUsuario('/usuario/cadastrar', usuario, setUsuario)
-                alert('Usuário cadastrado com sucesso!')
+                await cadastrarUsuario(`/usuarios/cadastrar`, usuario, setUsuario)
+                toastAlerta('Usuário cadastrado com sucesso', "sucesso")
+
             } catch (error) {
-                alert('Erro ao cadastrar o usuário.')
+                toastAlerta('Erro ao cadastrar o Usuário', "erro")
             }
+
         } else {
-            alert('Dados inconsistentes. Verifique as informações de cadastro.')
+            toastAlerta('Erro ao cadastrar o Usuário', "erro")
             setUsuario({ ...usuario, senha: "" })
             setConfirmarSenha("")
         }
 
         setIsLoading(false)
     }
-
     return (
         <>
             <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center font-bold bg-casca-ovo py-4 h-screen'>

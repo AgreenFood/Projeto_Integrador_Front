@@ -2,6 +2,7 @@ import { ReactNode, createContext, useState } from "react";
 
 import UsuarioLogin from "../models/UsuarioLogin"
 import { login } from "../services/Service"
+import { toastAlerta } from "../assets/utilis/toastAlerta";
 
 
 
@@ -41,7 +42,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
         try {
             await login(`/usuario/logar`, userLogin, setUsuario)
-            alert("Usuario logado com sucesso")
+            toastAlerta("Usuario logado com sucesso", 'sucesso')
             setIsLoading(false)
         } catch (error) {
             console.log(error)
