@@ -62,7 +62,7 @@ function FormularioProduto() {
     useEffect(() => {
         setProduto({
             ...produto,
-            categoria: categoria,
+            categorias: categoria,
         })
     }, [categoria])
 
@@ -70,7 +70,7 @@ function FormularioProduto() {
         setProduto({
             ...produto,
             [e.target.name]: e.target.value,
-            categoria: categoria,
+            categorias: categoria,
             usuario: usuario,
         });
     }
@@ -136,38 +136,38 @@ function FormularioProduto() {
 
             <form className="flex flex-col w-1/2 gap-4" onSubmit={gerarNovaProduto}>
                 <div className="flex flex-col gap-2">
-                    <label htmlFor="titulo">Nome do Produto</label>
+                    <label htmlFor="nome">Nome do Produto</label>
                     <input
                         value={produto.nome}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="text"
                         placeholder="Titulo"
-                        name="titulo"
+                        name="nome"
                         required
                         className="border-2 border-slate-700 rounded p-2"
                     />
                 </div>
                 <div className="flex flex-col gap-2">
-                    <label htmlFor="titulo">Descrição</label>
+                    <label htmlFor="descricao">Descrição</label>
                     <input
                         value={produto.descricao}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="text"
                         placeholder="Descrição do Produto"
-                        name="texto"
+                        name="descricao"
                         required
                         className="border-2 border-slate-700 rounded p-2"
                     />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <label htmlFor="titulo">Valor</label>
+                    <label htmlFor="valor">Valor</label>
                     <input
                         value={produto.valor}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="number"
                         placeholder="Valor do produto"
-                        name="number"
+                        name="valor"
                         step="0.01"
                         required
                         className="border-2 border-slate-700 rounded p-2"
@@ -175,26 +175,26 @@ function FormularioProduto() {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <label htmlFor="titulo">Quantidade</label>
+                    <label htmlFor="quantidade">Quantidade</label>
                     <input
                         value={produto.quantidade}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="number"
                         placeholder="Quantidade do produto"
-                        name="number"
+                        name="quantidade"
                         required
                         className="border-2 border-slate-700 rounded p-2"
                     />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <label htmlFor="titulo">Vendedor</label>
+                    <label htmlFor="vendedor">Vendedor</label>
                     <input
                         value={produto.vendedor}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="text"
                         placeholder="Texto"
-                        name="texto"
+                        name="vendedor"
                         required
                         className="border-2 border-slate-700 rounded p-2"
                     />
@@ -202,12 +202,12 @@ function FormularioProduto() {
 
                 <div className="flex flex-col gap-2">
                     <p>Categoria do Produto</p>
-                    <select name="categoria" id="categoria" className="border p-2 border-slate-800 rounded" 
+                    <select name="categorias" id="categorias" className="border p-2 border-slate-800 rounded" 
                         onChange={(e) => buscarCategoriaPorId(e.currentTarget.value)} >
                         <option value={categoria.id} selected disabled>Selecione uma Categoria</option>
-                        {categorias.map((categoria) => (
+                        {categorias.map((categorias) => (
                             <>
-                                <option value={categoria.id}>{categoria.tipo}</option>
+                                <option value={categorias.id}>{categorias.tipo}</option>
                             </>
                         ))}
 

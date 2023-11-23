@@ -10,6 +10,6 @@ export default interface Produto {
     quantidade: number;
     vendedor: string;
     foto: string;
-    categoria: Categoria | null;
+    categorias: Categoria | null;
     usuario: Usuario | null;
 }
