@@ -1,8 +1,18 @@
-import { Link } from "react-router-dom"
+import { useContext } from "react"
+import { Link, useNavigate } from "react-router-dom"
+import { AuthContext } from "../../contexts/AuthContext"
 
 function Navbar() {
 
-
+    const navigate = useNavigate()
+    const { handleLogout } = useContext(AuthContext)
+  
+    function logout() {
+        handleLogout()
+        alert('Usuário deslogado com sucesso')
+        navigate('/login')
+    }
+    
 
     return (
         <>
@@ -42,6 +52,9 @@ function Navbar() {
                             </li>
                             <li>
                                 <Link to="/equipe" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Equipe</Link>
+                            </li>
+                            <li>
+                                <Link to='' onClick={logout} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Sair</Link>
                             </li>
                         </ul>
                     </div>
