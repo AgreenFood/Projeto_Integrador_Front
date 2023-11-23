@@ -4,7 +4,6 @@ import { AuthProvider } from './contexts/AuthContext';
 import Home from './pages/home/Home';
 import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
-import Sobre from './components/sobre/Sobre';
 import Contato from './components/contato/Contato';
 import Equipe from './components/equipe/Equipe';
 import Login from './pages/login/Login';
@@ -28,7 +27,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<HomeLogado />} />
-            <Route path="/sobre" element={<Sobre />} />
             <Route path='/Contato' element={<Contato />} />
             <Route path='/equipe' element={<Equipe />} />
             <Route path='/login' element={<Login />} />
