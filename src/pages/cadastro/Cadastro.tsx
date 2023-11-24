@@ -55,7 +55,7 @@ function Cadastro() {
             setIsLoading(true)
 
             try {
-                await cadastrarUsuario(`/usuarios/cadastrar`, usuario, setUsuario)
+                await cadastrarUsuario(`/usuario/cadastrar`, usuario, setUsuario)
                 toastAlerta('Usuário cadastrado com sucesso', "sucesso")
 
             } catch (error) {
@@ -82,7 +82,7 @@ function Cadastro() {
                             type='text'
                             id='nomeCompleto'
                             name='nomeCompleto'
-                            placeholder='Nome Completo'
+                            placeholder='Nome Completo (mínimo 5 caracteres e máximo 20)'
                             className='border-2 border-slate-700 rounded p-2'
                             value={usuario.nomeCompleto}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
@@ -108,7 +108,7 @@ function Cadastro() {
                             type='text'
                             id='docIdentificador'
                             name='docIdentificador'
-                            placeholder='Documento Identificador'
+                            placeholder='Documento Identificador (mínimo 7 caracteres)'
                             className='border-2 border-slate-700 rounded p-2'
                             value={usuario.docIdentificador}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
@@ -146,7 +146,7 @@ function Cadastro() {
                             type='text'
                             id='dataNascimento'
                             name='dataNascimento'
-                            placeholder='Data de Nascimento aaaa-mm-dd'
+                            placeholder='Data de Nascimento (aaaa-mm-dd)'
                             className='border-2 border-slate-700 rounded p-2'
                             value={usuario.dataNascimento}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
@@ -172,7 +172,7 @@ function Cadastro() {
                             type='text'
                             id='senha'
                             name='senha'
-                            placeholder='Senha'
+                            placeholder='Senha (mínimo 8 caracteres)'
                             className='border-2 border-slate-700 rounded p-2'
                             value={usuario.senha}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}

@@ -1,9 +1,10 @@
-import { LinkedinLogo,GithubLogo } from '@phosphor-icons/react';
+import { LinkedinLogo, GithubLogo } from '@phosphor-icons/react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 
 export default function Equipe() {
+
   return (
 
     <>
@@ -12,20 +13,25 @@ export default function Equipe() {
 
         <div className='flex grid-cols-2 w-full py-20 mx-20'>
           <div className='block w-100 p-20 py-30 mx-20 mt-20' >
-            <Carousel fade>
+            <Carousel indicators={false}  fade>
               <Carousel.Item interval={3500}>
                 <img
                   className="d-block w-100"
                   src="https://docs.google.com/uc?id=1X2YDTq7uHOZcOhfq4VroTDyERLsXNyju"
                   alt="Elisa Souza"
                 />
-                <Carousel.Caption>
-                  <p className='mb-4 text-white md:text-4xl lg:text-5xl'>Elisa Souza</p>
-                  <div className='flex justify-center gap-2'>
-                        <LinkedinLogo size={48} weight='bold' />
-                        <GithubLogo size={48} weight='bold' />
-                    </div>
-                </Carousel.Caption>
+
+
+                <p className='mb-4 text-black md:text-4xl lg:text-3xl'>Elisa Souza</p>
+                <div className='flex justify-center gap-2'>
+                  <a href='https://www.linkedin.com' target='_blank' rel='noopener noreferrer'>
+                    <LinkedinLogo size={48} weight='bold' />
+                  </a>
+                  <a href='github.com' target='_blank' rel='noopener noreferrer'>
+                    <GithubLogo size={48} weight='bold' />
+                  </a>
+                </div>
+
               </Carousel.Item>
               <Carousel.Item interval={3500}>
                 <img
