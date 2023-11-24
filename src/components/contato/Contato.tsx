@@ -9,7 +9,7 @@ function Contato() {
     }
 
     return (
-        <div className="flex justify-around bg-casca-ovo h-[80vh]">
+        <div className="flex justify-around h-[80vh]">
             <div>
                 <div className="max-w-7xl flex flex-col items-center py-8">
                     <h1 className="font-poppins font-bold text-verde-leve text-5xl uppercase">AGreenFood</h1>
