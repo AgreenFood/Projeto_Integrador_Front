@@ -13,8 +13,8 @@ export default function Equipe() {
 
         <div className='flex grid-cols-2 w-full py-20 mx-20'>
           <div className='block w-100 p-20 py-30 mx-20 mt-20' >
-            <Carousel fade>
-              <Carousel.Item interval={30500}>
+            <Carousel indicators={false}  fade>
+              <Carousel.Item interval={3500}>
                 <img
                   className="d-block w-100"
                   src="https://docs.google.com/uc?id=1X2YDTq7uHOZcOhfq4VroTDyERLsXNyju"
@@ -24,7 +24,7 @@ export default function Equipe() {
 
                 <p className='mb-4 text-black md:text-4xl lg:text-3xl'>Elisa Souza</p>
                 <div className='flex justify-center gap-2'>
-                  <a href='https://www.linkedin.com/' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://www.linkedin.com' target='_blank' rel='noopener noreferrer'>
                     <LinkedinLogo size={48} weight='bold' />
                   </a>
                   <a href='github.com' target='_blank' rel='noopener noreferrer'>
@@ -33,7 +33,7 @@ export default function Equipe() {
                 </div>
 
               </Carousel.Item>
-              <Carousel.Item interval={30500}>
+              <Carousel.Item interval={3500}>
                 <img
                   className="d-block w-100"
                   src="https://docs.google.com/uc?id=1cV51LBU_LAKH3UrdUVfxbEZHBo5_UJv4"
