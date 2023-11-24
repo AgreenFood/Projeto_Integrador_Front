@@ -169,7 +169,7 @@ function Cadastro() {
                     <div className='flex flex-col w-full'>
                         <label htmlFor='senha'>Senha</label>
                         <input
-                            type='text'
+                            type='password'
                             id='senha'
                             name='senha'
                             placeholder='Senha (mínimo 8 caracteres)'
