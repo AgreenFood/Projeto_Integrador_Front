@@ -182,7 +182,7 @@ function Cadastro() {
                     <div className='flex flex-col w-full'>
                         <label htmlFor='confirmarSenha'>Confirmar Senha</label>
                         <input
-                            type='text'
+                            type='password'
                             id='confirmarSenha'
                             name='confirmarSenha'
                             placeholder='Confirmar Senha'
