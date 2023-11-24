@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom"
-import ListaProdutos from "../../components/produtos/listaProdutos/ListaProdutos"
-
 function Home() {
 
     return (
