@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { Dna } from "react-loader-spinner";
 
 import { buscar } from "../../../services/Service";
@@ -11,7 +11,7 @@ import { toastAlerta } from "../../../utilis/toastAlerta";
 
 function ListaProdutos() {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const [produto, setProduto] = useState<Produto[]>([]);
 
