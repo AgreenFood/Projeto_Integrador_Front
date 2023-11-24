@@ -82,7 +82,7 @@ function Cadastro() {
                             type='text'
                             id='nomeCompleto'
                             name='nomeCompleto'
-                            placeholder='Nome Completo (mínimo 5 caracteres e máximo 20)'
+                            placeholder='(mínimo 5 caracteres e máximo 20)'
                             className='border-2 border-slate-700 rounded p-2'
                             value={usuario.nomeCompleto}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
@@ -90,12 +90,12 @@ function Cadastro() {
                     </div>
 
                     <div className='flex flex-col w-full'>
-                        <label htmlFor='usuario'>Usuario</label>
+                        <label htmlFor='usuario'>Email</label>
                         <input
                             type='text'
                             id='usuario'
                             name='usuario'
-                            placeholder='Usuario(e-mail)'
+                            placeholder='digite um email válido'
                             className='border-2 border-slate-700 rounded p-2'
                             value={usuario.usuario}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
@@ -133,7 +133,7 @@ function Cadastro() {
                             type='text'
                             id='numeroResidencial'
                             name='numeroResidencial'
-                            placeholder='Número Residencial'
+                            placeholder='digite um número válido'
                             className='border-2 border-slate-700 rounded p-2'
                             value={usuario.numeroResidencial}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
@@ -153,7 +153,7 @@ function Cadastro() {
                             />
                     </div>
 
-                    <div className='flex flex-col w-full'>
+                    {/* <div className='flex flex-col w-full'>
                         <label htmlFor='foto'>Foto</label>
                         <input
                             type='text'
@@ -164,7 +164,7 @@ function Cadastro() {
                             value={usuario.foto}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                             />
-                    </div>
+                    </div> */}
 
                     <div className='flex flex-col w-full'>
                         <label htmlFor='senha'>Senha</label>
