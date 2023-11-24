@@ -13,7 +13,7 @@ export default function Equipe() {
       <div className="flex grid-cols-2 h-screen">
 
         <div className='flex grid-cols-2 w-full py-20'>
-          <div className='block w-100 p-20 py-30 mx-20 mt-20' >
+          <div className='block w-100 p-10 py-30 mx-20 mt-10' >
             <Carousel className='Carousel' indicators={false} fade>
               <Carousel.Item interval={3500}>
                 <img
@@ -117,7 +117,9 @@ export default function Equipe() {
             
           </div>
 
-          <div className='text-center'>
+          <div className='mx-10'></div>
+
+          <div className='text-center mx-10'>
 
             <h1 className="text-5xl text-hunter-green font-poppins font-bold uppercase mt-4">Somos a AGreenFood!</h1>
 
