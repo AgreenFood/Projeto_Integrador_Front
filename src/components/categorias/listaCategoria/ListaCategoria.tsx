@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { Dna } from "react-loader-spinner";
 
 import { buscar } from "../../../services/Service";
@@ -13,7 +13,7 @@ function ListaCategoria() {
     
     const [categoria, setCategoria] = useState<Categoria[]>([]);
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const { usuario, handleLogout } = useContext(AuthContext);
     const token = usuario.token;
