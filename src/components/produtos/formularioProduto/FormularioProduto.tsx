@@ -5,6 +5,7 @@ import Categoria from "../../../models/Categoria";
 import Produto from "../../../models/Produto";
 import { AuthContext } from "../../../contexts/AuthContext";
 import { RotatingLines } from "react-loader-spinner";
+import { toastAlerta } from "../../../utilis/toastAlerta";
 
 function FormularioProduto() {
     const navigate = useNavigate();
@@ -46,7 +47,7 @@ function FormularioProduto() {
 
     useEffect(() => {
         if (token === '') {
-            alert('Você precisa estar logado');
+            toastAlerta('Você precisa estar logado', 'erro');
             navigate('/');
         }
     }, [token])
@@ -91,14 +92,14 @@ function FormularioProduto() {
                     },
                 });
 
-                alert('Produto atualizado com sucesso')
+                toastAlerta('Produto atualizado com sucesso', 'sucesso')
 
             } catch (error: any) {
                 if (error.toString().includes('403')) {
-                    alert('O token expirou, favor logar novamente')
+                    toastAlerta('O token expirou, favor logar novamente', 'erro')
                     handleLogout()
                 } else {
-                    alert('Erro ao atualizar a Produto')
+                    toastAlerta('Erro ao atualizar a Produto', 'erro')
                 }
             }
 
@@ -110,14 +111,14 @@ function FormularioProduto() {
                     },
                 })
 
-                alert('Produto cadastrado com sucesso');
+                toastAlerta('Produto cadastrado com sucesso', 'sucesso');
 
             } catch (error: any) {
                 if (error.toString().includes('403')) {
-                    alert('O token expirou, favor logar novamente')
+                    toastAlerta('O token expirou, favor logar novamente', 'erro')
                     handleLogout()
                 } else {
-                    alert('Erro ao cadastrar o Produto');
+                    toastAlerta('Erro ao cadastrar o Produto','erro');
                 }
             }
         }

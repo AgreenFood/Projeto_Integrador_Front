@@ -7,6 +7,7 @@ import { AuthContext } from "../../../contexts/AuthContext";
 
 import Produto from "../../../models/Produto";
 import CardProdutos from "../cardProdutos/CardProdutos";
+import { toastAlerta } from "../../../utilis/toastAlerta";
 
 function ListaProdutos() {
 
@@ -27,7 +28,7 @@ function ListaProdutos() {
             })
         } catch (error: any) {
             if (error.toString().includes('403')) {
-                alert('O token expirou, favor logar novamente')
+                toastAlerta('O token expirou, favor logar novamente', 'erro')
                 handleLogout()
             }
         }
@@ -35,7 +36,7 @@ function ListaProdutos() {
 
     useEffect(() => {
         if (token === '') {
-            alert('Você precisa estar logado')
+            toastAlerta('Você precisa estar logado', 'erro')
             navigate('/login')
         }
     }, [token])

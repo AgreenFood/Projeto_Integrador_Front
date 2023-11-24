@@ -29,7 +29,7 @@ function FormularioCategoria() {
             })
         } catch (error: any) {
             if (error.toString().includes('403')) {
-                toastAlerta('O token experiou, favor logar novamente', 'Sucesso!')
+                toastAlerta('O token experiou, favor logar novamente', 'erro')
                 handleLogout()
             }
         }
@@ -39,7 +39,7 @@ function FormularioCategoria() {
 
     useEffect(() => {
         if (token === '') {
-            toastAlerta('Você precisa estar logado', 'Sucesso!');
+            toastAlerta('Você precisa estar logado', 'erro');
             navigate('/login')
         }
     }, [token]);
@@ -69,14 +69,14 @@ function FormularioCategoria() {
                     }
                 })
 
-                toastAlerta('Categoria atualizado com sucesso!', 'Sucesso!')
+                toastAlerta('Categoria atualizado com sucesso!', 'sucesso')
 
             } catch (error: any) {
                 if (error.toString().includes('403')) {
-                    toastAlerta('O token expirou, favor logar novamente', "Sucesso!")
+                    toastAlerta('O token expirou, favor logar novamente', "erro")
                     handleLogout()
                 } else {
-                    toastAlerta('Erro ao atualizar Categoria', 'Sucesso!')
+                    toastAlerta('Erro ao atualizar Categoria', 'erro')
                 }
             }
         } else {
@@ -87,14 +87,14 @@ function FormularioCategoria() {
                     }
                 })
 
-                toastAlerta('Categoria cadastrada com sucesso', 'Sucesso!')
+                toastAlerta('Categoria cadastrada com sucesso', 'sucesso')
 
             } catch (error: any) {
                 if (error.toString().includes('403')) {
-                    toastAlerta('O token experiou, favor logar novamente', 'Sucesso!')
+                    toastAlerta('O token experiou, favor logar novamente', 'erro')
                     handleLogout()
                 } else {
-                    toastAlerta('Erro ao cadastrar Categoria', 'Sucesso!')
+                    toastAlerta('Erro ao cadastrar Categoria', 'erro')
                 }
             }
         }

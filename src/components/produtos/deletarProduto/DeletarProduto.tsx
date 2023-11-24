@@ -6,6 +6,7 @@ import { buscar, deletar } from "../../../services/Service"
 import { AuthContext } from "../../../contexts/AuthContext"
 
 import Produto from "../../../models/Produto"
+import { toastAlerta } from "../../../utilis/toastAlerta"
 
 function DeletarProduto() {
 
@@ -28,7 +29,7 @@ function DeletarProduto() {
             })
         } catch (error: any) {
             if (error.toString().includes('403')) {
-                alert('O token expirou, favor logar novamente')
+                toastAlerta('O token expirou, favor logar novamente', 'erro')
                 handleLogout()
             }
         }
@@ -36,7 +37,7 @@ function DeletarProduto() {
 
     useEffect(() => {
         if (token === '') {
-            alert('Você precisa estar logado')
+            toastAlerta('Você precisa estar logado', 'erro')
             navigate('/login')
         }
     }, [token])
@@ -56,9 +57,9 @@ function DeletarProduto() {
                     'Authorization': token
                 }
             })
-            alert('Produto deletado com sucesso')
+            toastAlerta('Produto deletado com sucesso', 'sucesso')
         } catch (error) {
-            alert('Erro ao deletar o Produto')
+            toastAlerta('Erro ao deletar o Produto', 'erro')
         }
 
         setIsLoading(false)

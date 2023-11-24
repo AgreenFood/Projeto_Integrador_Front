@@ -28,7 +28,7 @@ function DeletarCategoria() {
             })
         } catch (error: any) {
             if (error.toString().includes('403')) {
-                toastAlerta('O token expirou, favor logar novamente', 'Sucesso!')
+                toastAlerta('O token expirou, favor logar novamente', 'erro')
                 handleLogout()
             }
         }
@@ -36,7 +36,7 @@ function DeletarCategoria() {
 
     useEffect(() => {
         if (token === '') {
-            toastAlerta('Você precisa estar logado', 'Sucesso!')
+            toastAlerta('Você precisa estar logado', 'erro')
             navigate('/login')
         }
     }, [token])
@@ -57,10 +57,10 @@ function DeletarCategoria() {
                 }
             })
 
-            toastAlerta('Categoria apagada com sucesso', 'Sucesso!')
+            toastAlerta('Categoria apagada com sucesso', 'sucesso')
 
         } catch (error) {
-            toastAlerta('Erro ao apagar o Categoria', 'Sucesso!')
+            toastAlerta('Erro ao apagar o Categoria', 'erro')
         }
 
         setIsLoading(false)
