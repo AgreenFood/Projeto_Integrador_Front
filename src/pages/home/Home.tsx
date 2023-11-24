@@ -1,4 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
+import './Home.css'
 
 function Home() {
 
@@ -7,28 +8,28 @@ function Home() {
             <div className="bg-casca-ovo h-[100vh]">
 
                 <div>
-                    <Carousel fade className=" flex justify-center h-40" indicators={false} controls={false}>
-                        <Carousel.Item interval={3500}>
+                    <Carousel fade className=" flex justify-center carousel-image" indicators={false} controls={false}>
+                        <Carousel.Item interval={2500}>
                             <img
-                                src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
+                                src="https://i.imgur.com/zouDS2Q.jpeg"
                                 alt="image 1"
-                                className="h-full w-full object-cover"
+                                className="h-1/3 w-full object-cover"
                             />
 
                         </Carousel.Item>
 
-                        <Carousel.Item interval={3500}>
+                        <Carousel.Item interval={2500}>
                             <img
-                                src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+                                src="https://i.imgur.com/kRHktkj.png"
                                 alt="image 2"
                                 className="h-full w-full object-cover"
                             />
                         </Carousel.Item>
 
-                        <Carousel.Item interval={3500}>
+                        <Carousel.Item interval={2500}>
 
                             <img
-                                src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
+                                src="https://i.imgur.com/LHmPVfp.jpeg"
                                 alt="image 3"
                                 className="h-full w-full object-cover"
                             />
@@ -37,9 +38,9 @@ function Home() {
                     </Carousel>
                 </div>
 
-                <div className="container grid grid-cols-2 font-poppins text-hunter-green bg-casca-ovo">
+                <div className="flex mx-40 justify-around text-hunter-green">
 
-                    <div className="flex flex-col gap-4 items-center justify-center mt-40">
+                    <div className="flex flex-col gap-4 items-center mt-20">
                         <h2 className="text-5xl font-bold">Bem-vindes ao</h2>
                         <h2 className="text-5xl font-bold">AGreenFood!</h2>
                         <p className="text-xl font-montserrat font-bold me-0">Do campo direto para a sua mesa!</p>
@@ -49,16 +50,26 @@ function Home() {
                                 src="https://docs.google.com/uc?id=1t6jWYttF6px5A6m1G5lboD8kPAD3mRgT
                                 "
                                 alt="Imagem da Home"
-                                width='400px'
+                                width='300px'
                             />
                         </div>
-
                     </div>
 
-                    <div className="flex justify-center items-center ">
+                    <div className='w-1/2 mt-10' >
+                        <h3 className='text-justify text-3xl font-poppins font-semibold uppercase mt-2 w-1/2 mx-auto'>Faça parte da nossa família!</h3>
+                        <p className='text-justify text-slate-800 font-montserrat font-semibold mt-2 w-1/2 mx-auto'>
+                            Somos um site onde você, agricultor loca, tem a oportunidade de divulgar seus produtos para um público de maior alcance!
+                            Se registrando em nosso site, você poderar cadastrar os produtos que gostaria de vender! O valor para utilizar o site?
+                            Somente a sua colaboração em divulgar nosso cantinho verde para que mais pessoas possam ter a oportunidade de fazer parte
+                            dessa grande família.
+                        </p>
 
+                        <p className='text-justify text-slate-800 font-montserrat font-semibold mt-2 w-1/2 mx-auto'>
+                           Na AGreenfood também nos empenhos a alcançar aqueles que mais precisam ser vistos. Temos o compromisso de fazer doações de cestas básicas
+                           para pessoas de baixa ou nehuma renda. Todos que gostariam de contribuir com essa missão, podem entrar em contato conosco para mais detalhes! Curtiu nossa proposta? Fala login ou cadastre-se
 
-
+                           <button className='flex justify-center mx-auto mt-4 items-center bg-verde-leve w-40 h-10 rounded uppercase font-montserrat font-bold'>enviar</button>
+                        </p>
                     </div>
 
                 </div>

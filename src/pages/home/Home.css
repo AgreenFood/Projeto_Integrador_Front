@@ -1,0 +1,7 @@
+*{
+    background-color: #F2E8CF;
+}
+
+.carousel-image { 
+    object-fit: cover; width: 100%; height: 15rem; 
+}
