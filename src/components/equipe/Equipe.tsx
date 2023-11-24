@@ -8,7 +8,7 @@ export default function Equipe() {
 
     <>
 
-      <div className="flex grid-cols-2 w-full bg-casca-ovo">
+      <div className="flex grid-cols-2 w-full bg-casca-ovo h-[100vh]">
 
         <div className='flex grid-cols-2 w-full py-20 mx-20'>
           <div className='block w-100 p-20 py-30 mx-20 mt-20' >

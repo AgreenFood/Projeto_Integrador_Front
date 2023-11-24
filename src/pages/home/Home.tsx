@@ -5,7 +5,7 @@ function Home() {
 
     return (
         <>
-            <div className="bg-casca-ovo h-[100vh]">
+            <div className="bg-casca-ovo h-[100vh] home">
 
                 <div>
                     <Carousel fade className=" flex justify-center carousel-image" indicators={false} controls={false}>
