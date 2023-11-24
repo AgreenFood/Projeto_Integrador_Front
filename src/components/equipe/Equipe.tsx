@@ -10,7 +10,7 @@ export default function Equipe() {
 
     <>
 
-      <div className="flex grid-cols-2 background h-screen">
+      <div className="flex grid-cols-2 h-screen">
 
         <div className='flex grid-cols-2 w-full py-20'>
           <div className='block w-100 p-20 py-30 mx-20 mt-20' >
