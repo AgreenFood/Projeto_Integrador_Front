@@ -65,10 +65,17 @@ function Home() {
                         </p>
 
                         <p className='text-justify text-slate-800 font-montserrat font-semibold mt-2 w-1/2 mx-auto'>
-                           Na AGreenfood também nos empenhos a alcançar aqueles que mais precisam ser vistos. Temos o compromisso de fazer doações de cestas básicas
-                           para pessoas de baixa ou nehuma renda. Todos que gostariam de contribuir com essa missão, podem entrar em contato conosco para mais detalhes! Curtiu nossa proposta? Fala login ou cadastre-se
+                            Na AGreenfood também nos empenhos a alcançar aqueles que mais precisam ser vistos. Temos o compromisso de fazer doações de cestas básicas
+                            para pessoas de baixa ou nehuma renda. Todos que gostariam de contribuir com essa missão, podem entrar em contato conosco para mais detalhes! Curtiu nossa proposta? Fala login ou cadastre-se
 
-                           <button className='flex justify-center mx-auto mt-4 items-center bg-verde-leve w-40 h-10 rounded uppercase font-montserrat font-bold'>enviar</button>
+                            <div className='flex justify-center'>
+                                <button className='flex justify-center mx-auto mt-4 items-center bg-verde-leve w-40 h-10 rounded uppercase font-montserrat font-bold'>
+                                    cadastrar
+                                </button>
+                                <button className='flex justify-center mx-auto mt-4 items-center bg-verde-leve w-40 h-10 rounded uppercase font-montserrat font-bold'>
+                                    login
+                                </button>
+                            </div>
                         </p>
                     </div>
 
