@@ -39,24 +39,6 @@ function Home() {
                     </Carousel>
                 </div>
 
-                <div className='bg-hunter-green mt-0 flex justify-between'>
-                    <div className='ml-20'>
-                        <Link to='/'>
-                            <img className='w-20' src="https://docs.google.com/uc?id=1t6jWYttF6px5A6m1G5lboD8kPAD3mRgT" alt="" />
-                        </Link>
-
-                    </div>
-
-                    <div className='mr-10 mt-4'>
-                        <ul className='flex justify-between gap-4'>
-                            <li>
-                                <Link to='/login' className='font-montserrat '><button className='bg-verde-leve w-40 h-10 border rounded font-semibold uppercase'>login</button>
-                                </Link>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
 
                 <div className='flex justify-center mt-40 mx-auto'></div>
 

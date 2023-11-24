@@ -33,12 +33,12 @@ function ListaCategoria() {
         }
     }
 
-    useEffect(() => {
-        if (token === '') {
-            toastAlerta('Você precisa estar logado', 'erro');
-            navigate('/login');
-        }
-    }, [token])
+    // useEffect(() => {
+    //     if (token === '') {
+    //         toastAlerta('VocÃª precisa estar logado', 'erro');
+    //         navigate('/login');
+    //     }
+    // }, [token])
 
     useEffect(() => {
         buscarCategorias()

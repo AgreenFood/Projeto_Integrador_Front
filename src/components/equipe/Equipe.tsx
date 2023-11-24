@@ -1,6 +1,7 @@
 import { LinkedinLogo, GithubLogo } from '@phosphor-icons/react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
+import './Equipe.css'
 
 
 export default function Equipe() {
@@ -9,11 +10,11 @@ export default function Equipe() {
 
     <>
 
-      <div className="flex grid-cols-2 w-full bg-casca-ovo h-[100vh]">
+      <div className="flex grid-cols-2 background h-screen">
 
-        <div className='flex grid-cols-2 w-full py-20 mx-20'>
+        <div className='flex grid-cols-2 w-full py-20'>
           <div className='block w-100 p-20 py-30 mx-20 mt-20' >
-            <Carousel indicators={false}  fade>
+            <Carousel className='Carousel' indicators={false} fade>
               <Carousel.Item interval={3500}>
                 <img
                   className="d-block w-100"
@@ -21,13 +22,12 @@ export default function Equipe() {
                   alt="Elisa Souza"
                 />
 
-
-                <p className='mb-4 text-black md:text-4xl lg:text-3xl'>Elisa Souza</p>
+                <p className='mb-4 text-black md:text-4xl lg:text-3xl text-center'>Elisa Souza</p>
                 <div className='flex justify-center gap-2'>
-                  <a href='https://www.linkedin.com' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://www.linkedin.com/in/elisa-souzaa' target='_blank' rel='noopener noreferrer'>
                     <LinkedinLogo size={48} weight='bold' />
                   </a>
-                  <a href='github.com' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://github.com/ElisaSouzaaa' target='_blank' rel='noopener noreferrer'>
                     <GithubLogo size={48} weight='bold' />
                   </a>
                 </div>
@@ -39,10 +39,15 @@ export default function Equipe() {
                   src="https://docs.google.com/uc?id=1cV51LBU_LAKH3UrdUVfxbEZHBo5_UJv4"
                   alt="Gabriel Assis"
                 />
-                <Carousel.Caption>
-                  <h1 className='mb-4 text-white text-3xl md:text-4xl lg:text-5xl'>Gabriel Assis</h1>
-                  <p>Dev Jr com ascendência em Sr</p>
-                </Carousel.Caption>
+                <p className='mb-4 text-black md:text-4xl lg:text-3xl text-center'>Gabriel Assis</p>
+                <div className='flex justify-center gap-2'>
+                  <a href='https://www.linkedin.com/in/gabriel-deassis/' target='_blank' rel='noopener noreferrer'>
+                    <LinkedinLogo size={48} weight='bold' />
+                  </a>
+                  <a href='https://github.com/GabAssis' target='_blank' rel='noopener noreferrer'>
+                    <GithubLogo size={48} weight='bold' />
+                  </a>
+                </div>
               </Carousel.Item>
               <Carousel.Item interval={3500}>
                 <img
@@ -50,10 +55,15 @@ export default function Equipe() {
                   src="https://docs.google.com/uc?id=14roeltlRhPAfuu4HjcH_Ot1t9dTo4ID2"
                   alt="Katia Mendes"
                 />
-                <Carousel.Caption>
-                  <h1 className='mb-4 text-white text-3xl md:text-4xl lg:text-5xl'>Katia Mendes</h1>
-                  <p>Dev Jr com ascendência em Sr</p>
-                </Carousel.Caption>
+                <p className='mb-4 text-black md:text-4xl lg:text-3xl text-center'>Katia Mendes</p>
+                <div className='flex justify-center gap-2'>
+                  <a href='https://www.linkedin.com/in/katiamendesr/' target='_blank' rel='noopener noreferrer'>
+                    <LinkedinLogo size={48} weight='bold' />
+                  </a>
+                  <a href='https://github.com/katia-mendes' target='_blank' rel='noopener noreferrer'>
+                    <GithubLogo size={48} weight='bold' />
+                  </a>
+                </div>
               </Carousel.Item>
               <Carousel.Item interval={3500}>
                 <img
@@ -61,10 +71,15 @@ export default function Equipe() {
                   src="https://docs.google.com/uc?id=1ftnqFg64PRVca_0uO4u9RwgTd3E8O4vx"
                   alt="Olavo Pessôa"
                 />
-                <Carousel.Caption>
-                  <h1 className='mb-4 text-white text-3xl md:text-4xl lg:text-5xl'>Olavo Pessôa</h1>
-                  <p>Dev Jr com ascendência em Sr</p>
-                </Carousel.Caption>
+                <p className='mb-4 text-black md:text-4xl lg:text-3xl text-center'>Olavo Pessôa</p>
+                <div className='flex justify-center gap-2'>
+                  <a href='https://www.linkedin.com/in/olavo-pess%C3%B4a/' target='_blank' rel='noopener noreferrer'>
+                    <LinkedinLogo size={48} weight='bold' />
+                  </a>
+                  <a href='https://github.com/Olavo5' target='_blank' rel='noopener noreferrer'>
+                    <GithubLogo size={48} weight='bold' />
+                  </a>
+                </div>
               </Carousel.Item>
               <Carousel.Item interval={3500}>
                 <img
@@ -72,10 +87,15 @@ export default function Equipe() {
                   src="https://docs.google.com/uc?id=1T_bVO8O1mB8-6njV0eUIs0ke6HQTtW8G"
                   alt="Raphael Gomes"
                 />
-                <Carousel.Caption>
-                  <h1 className='mb-4 text-white text-3xl md:text-4xl lg:text-5xl'>Raphael Gomes</h1>
-                  <p>Apenas um dev</p>
-                </Carousel.Caption>
+                <p className='mb-4 text-black md:text-4xl lg:text-3xl text-center'>Raphael Gomes</p>
+                <div className='flex justify-center gap-2'>
+                  <a href='https://www.linkedin.com/in/raphaelfsg/' target='_blank' rel='noopener noreferrer'>
+                    <LinkedinLogo size={48} weight='bold' />
+                  </a>
+                  <a href='https://github.com/raphaelfsg' target='_blank' rel='noopener noreferrer'>
+                    <GithubLogo size={48} weight='bold' />
+                  </a>
+                </div>
               </Carousel.Item>
               <Carousel.Item interval={3500}>
                 <img
@@ -83,13 +103,18 @@ export default function Equipe() {
                   src="https://docs.google.com/uc?id=1uJgc9WsCmBdCly0sWP17ECp5-B4-siH4"
                   alt="Raquel Barreto"
                 />
-                <Carousel.Caption>
-                  <h1 className='mb-4 text-white text-3xl md:text-4xl lg:text-5xl'>Raquel Barreto</h1>
-                  <p>Que Deus a tenha</p>
-                </Carousel.Caption>
+                <p className='mb-4 text-black md:text-4xl lg:text-3xl text-center'>Raquel Barreto</p>
+                <div className='flex justify-center gap-2'>
+                  <a href='https://www.linkedin.com/in/raquelsbarreto/' target='_blank' rel='noopener noreferrer'>
+                    <LinkedinLogo size={48} weight='bold' />
+                  </a>
+                  <a href='https://github.com/Kel2203' target='_blank' rel='noopener noreferrer'>
+                    <GithubLogo size={48} weight='bold' />
+                  </a>
+                </div>
               </Carousel.Item>
             </Carousel>
-            <h1 className='text-center font-poppins font-bold uppercase py-2'>Equipe 5 do Projeto Integrador</h1>
+            
           </div>
 
           <div className='text-center'>
