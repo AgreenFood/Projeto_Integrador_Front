@@ -1,0 +1,68 @@
+ {
+    "categoria": [
+        {
+            "id": 12,
+            "tipo": "Verduras",
+            "produtos": [],
+            "foto": "https://img.freepik.com/fotos-gratis/fechar-o-agricultor-de-mao-no-jardim-durante-o-fundo-de-comida-de-manha_1150-7184.jpg?size=626&ext=jpg&uid=R128029081&ga=GA1.1.1502328272.1700780875&semt=sph"
+
+
+        },
+        {
+            "id": 11,
+            "tipo": "Legumes",
+            "produtos": [],
+            "foto": "https://img.freepik.com/fotos-gratis/vista-superior-frutas-e-vegetais-tomates-cereja-tomate-limao-maca-repolho-roxo-coentro_140725-145428.jpg?size=626&ext=jpg&uid=R128029081&ga=GA1.1.1502328272.1700780875&semt=sph"
+        },
+        {
+            "id": 5,
+            "tipo": "Frutas",
+            "produtos": [],
+            "foto": "https://img.freepik.com/fotos-gratis/uvas-morangos-abacaxi-kiwi-damasco-banana-e-abacaxi-inteiro_23-2147968680.jpg?size=626&ext=jpg&uid=R128029081&ga=GA1.1.1502328272.1700780875&semt=sph"
+        },
+        {
+            "id": 14,
+            "tipo": "Peixes",
+            "produtos": [],
+            "foto": "https://img.freepik.com/fotos-gratis/lindo-grupo-de-peixes-debaixo-d-agua_23-2150737671.jpg?size=626&ext=jpg&uid=R128029081&ga=GA1.1.1502328272.1700780875&semt=sph"
+        },
+        {
+            "id": 18,
+            "tipo": "Laticínios ",
+            "produtos": [],
+            "foto": "https://img.freepik.com/fotos-gratis/produtos-lacteos-laticinios_144627-45947.jpg?size=626&ext=jpg&uid=R128029081&ga=GA1.1.1502328272.1700780875&semt=sph"
+        },
+        {
+            "id": 19,
+            "tipo": "Temperos",
+            "produtos": [],
+            "foto": "https://img.freepik.com/fotos-gratis/pacote-de-colher-com-condimentos-na-mesa_23-2148605273.jpg?size=626&ext=jpg&uid=R128029081&ga=GA1.1.1502328272.1700780875&semt=sph"
+        },
+        {
+            "id": 22,
+            "tipo": "Grãos",
+            "produtos": [],
+            "foto": "https://img.freepik.com/fotos-gratis/conjunto-de-nozes-pistache-amendoa-amendoim-caju-pinhoes-e-nozes-alinhadas-sortidas-e-frutas-secas-em-uma-mini-tigelas-diferentes_176474-2051.jpg?size=626&ext=jpg&ga=GA1.1.1502328272.1700780875&semt=sph"
+        },
+        {
+            "id": 24,
+            "tipo": "Doce Em Compota",
+            "produtos": [],
+            "foto": "https://img.freepik.com/fotos-gratis/arranjo-dos-frascos-de-alto-angulo_23-2148563195.jpg?size=626&ext=jpg&uid=R128029081&ga=GA1.1.1502328272.1700780875&semt=ais"
+        },
+        {
+            "id": 20,
+            "tipo": "Carnes",
+            "produtos": [],
+            "foto": "https://img.freepik.com/fotos-premium/close-up-de-carne-fresca-crua-branca-e-vermelha-com-vegetais_488220-4492.jpg?size=626&ext=jpg&ga=GA1.1.1502328272.1700780875&semt=ais"
+        }
+    ]
+}
+
+
+
+
+
+
+
+

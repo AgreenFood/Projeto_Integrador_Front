@@ -51,15 +51,12 @@ function Home() {
                             <p className='text-hunter-green'>AGreenfood</p>
                         </span>
                         <p className='text-justify text-slate-800 font-montserrat py-2 mt-2 mx-auto w-1/2'>
-                            Somos um site onde você, agricultor loca, tem a oportunidade de divulgar seus produtos para um público de maior alcance!
-                            Se registrando em nosso site, você poderar cadastrar os produtos que gostaria de vender! O valor para utilizar o site?
-                            Somente a sua colaboração em divulgar nosso cantinho verde para que mais pessoas possam ter a oportunidade de fazer parte
-                            dessa grande família.
+                            Somos um site onde você, agricultor local, tem a oportunidade de divulgar seus produtos para um público de maior alcance! Se registrando em nosso site, você podera cadastrar os produtos que gostaria de vender! O valor para utilizar o site? Somente a sua colaboração em divulgar nosso cantinho verde para que mais pessoas possam ter a oportunidade de fazer parte dessa grande família.
+                            
                         </p>
 
                         <p className='text-justify text-slate-800 font-montserrat mt-2 mx-auto w-1/2'>
-                            Na AGreenfood também nos empenhos a alcançar aqueles que mais precisam ser vistos. Temos o compromisso de fazer doações de cestas básicas
-                            para pessoas de baixa ou nehuma renda. Todos que gostariam de contribuir com essa missão, podem entrar em contato conosco para mais detalhes! Curtiu nossa proposta? Fala login ou cadastre-se
+                            A AGreenfood também tem como um de seus objetivos: alcançar aqueles que mais precisam ser vistos. Temos o compromisso de fazer doações de cestas básicas para pessoas de baixa ou nenhuma renda. Todos que gostariam de contribuir com essa missão, podem entrar em contato conosco, para mais detalhes! Curtiu nossa proposta? Faça login ou cadastre-se!
                         </p>
                         <div className='text-center  mb-10 py-2'>
                             <Link to='/cadastro'>
