@@ -31,7 +31,7 @@ function Navbar() {
                     </Link>
                     <img
                             src="https://img.freepik.com/vetores-premium/design-de-icone-de-vetor-de-carrinho-de-supermercado-de-supermercado-icone-plano_462371-2312.jpg?size=626&ext=jpg&uid=R128029081&ga=GA1.1.1502328272.1700780875&semt=ais"
-                            alt="Carrinho Eco"
+                            alt="Carrinho"
                             width="75rem"
                         />
 
