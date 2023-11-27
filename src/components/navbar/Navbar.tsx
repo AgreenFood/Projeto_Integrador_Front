@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom"
 import { AuthContext } from "../../contexts/AuthContext"
 import { toastAlerta } from "../../utilis/toastAlerta"
 
+
 function Navbar() {
 
     const navigate = useNavigate()
@@ -16,8 +17,6 @@ function Navbar() {
 
 
 
-
-
     return (
         <>
             <div className="w-full bg-hunter-green text-white flex justify-around py-4">
@@ -26,10 +25,16 @@ function Navbar() {
                     <Link to={`/Home`}>
                         <img
                             src="https://docs.google.com/uc?id=1t6jWYttF6px5A6m1G5lboD8kPAD3mRgT"
-                            alt=""
+                            alt="Logo AgreenFood"
                             width="75rem"
                         />
                     </Link>
+                    <img
+                            src="https://img.freepik.com/vetores-premium/design-de-icone-de-vetor-de-carrinho-de-supermercado-de-supermercado-icone-plano_462371-2312.jpg?size=626&ext=jpg&uid=R128029081&ga=GA1.1.1502328272.1700780875&semt=ais"
+                            alt="Carrinho"
+                            width="75rem"
+                        />
+
                 </div>
 
                 <div className="py-4 mx-4">
