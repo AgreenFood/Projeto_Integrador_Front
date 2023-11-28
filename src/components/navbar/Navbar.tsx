@@ -30,10 +30,10 @@ function Navbar() {
                         />
                     </Link>
                     <img
-                            src="https://img.freepik.com/vetores-premium/design-de-icone-de-vetor-de-carrinho-de-supermercado-de-supermercado-icone-plano_462371-2312.jpg?size=626&ext=jpg&uid=R128029081&ga=GA1.1.1502328272.1700780875&semt=ais"
-                            alt="Carrinho"
-                            width="75rem"
-                        />
+                        src="https://img.freepik.com/vetores-premium/design-de-icone-de-vetor-de-carrinho-de-supermercado-de-supermercado-icone-plano_462371-2312.jpg?size=626&ext=jpg&uid=R128029081&ga=GA1.1.1502328272.1700780875&semt=ais"
+                        alt="Carrinho"
+                        width="75rem"
+                    />
 
                 </div>
 
@@ -52,36 +52,56 @@ function Navbar() {
                     <div id="dropdown" className="z-10 hidden bg-android-verde divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
                             {usuario.token !== "" ? (
-                                <li>
-                                    <Link to="/home" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Home</Link>
-                                </li>
-                            ) : (<li>
-                                <Link to="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Home</Link>
-                            </li>)}
-                            <li>
-                                <Link to="/categorias" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Categoria</Link>
-                            </li>
-                            <li>
-                                <Link to="/produtos" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Produto</Link>
-                            </li>
-
-                            <li>
-                                <Link to="/contato" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Contato</Link>
-                            </li>
-                            <li>
-                                <Link to="/equipe" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Equipe</Link>
-                            </li>
-                            
-                            {usuario.token !== "" ? (
-                                <li>
-                                    <Link to='' onClick={logout} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Sair</Link>
-                                </li>
-                            ) : (<li>
-                                <Link to='/login' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold'>Login</Link>
-                            </li>)}
-
+                                <>
+                                    <li>
+                                        <Link to="/home" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Home</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/categorias" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Categoria</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/produtos" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Produto</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/contato" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Contato</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/equipe" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Equipe</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='' onClick={logout} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Sair</Link>
+                                    </li>
+                                </>
+                            ) : (
+                                <>
+                                    <li>
+                                        <Link to="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Home</Link>
+                                    </li>
+                                    {/*
+        A linha abaixo será renderizada apenas se o token do usuário for diferente de vazio
+        */}
+                                    {usuario.token !== "" && (
+                                        <li>
+                                            <Link to="/categorias" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Categoria</Link>
+                                        </li>
+                                    )}
+                                    <li>
+                                        <Link to="/produtos" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Produto</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/contato" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Contato</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/equipe" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold"> Equipe</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/login' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white font-montserrat font-bold'>Login</Link>
+                                    </li>
+                                </>
+                            )}
                         </ul>
                     </div>
+
 
                 </div>
             </div>
