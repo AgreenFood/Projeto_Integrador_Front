@@ -49,6 +49,7 @@ function CardProdutos({ post }: CardProdutosProps) {
                         <button>Deletar</button>
                     </Link>
                 </div>
+
             ) : (<div className="text-slate-100 bg-castanha-profunda hover:bg-red-900 w-full flex items-center justify-center">
                 <button>Comprar</button>
             </div>)}
