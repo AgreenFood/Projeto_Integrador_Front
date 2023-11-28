@@ -35,7 +35,6 @@ function FormularioCategoria() {
         }
     }
 
-    //comentario
 
     useEffect(() => {
         if (token === '') {
