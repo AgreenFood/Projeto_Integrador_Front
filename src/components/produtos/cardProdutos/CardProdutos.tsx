@@ -30,14 +30,18 @@ function CardProdutos({ post }: CardProdutosProps) {
                     <img src="https://docs.google.com/uc?id=1t6jWYttF6px5A6m1G5lboD8kPAD3mRgT" className="h-12 rounded-full" alt="Imagem do usuário" />
                     <h3 className="text-lg font-bold text-center uppercase">{post.usuario?.nomeCompleto}:</h3>
                 </div>
-                <div className='p-4 '>
+                <div className='p-4'>
                     <h4 className='text-lg font-semibold uppercase'>{post.nome}</h4>
                     <p>{post.descricao}:</p>
                     <p>{post.valor}</p>
                     <p>{post.quantidade}</p>
                     <p>{post.vendedor}</p>
-                    <p>Categoria: {post.categorias?.tipo} </p>
-                    <img src={foto} width="200" height="150" />
+                    <div className="pb-4">
+                        <p>Categoria: {post.categorias?.tipo} </p>
+                    </div>
+                    <div className="d-flex justify-content-center align-items-center" style={{ height: '200px' }}>
+                        <img src={foto} alt="Imagem" className="mx-auto" style={{ maxHeight: '100%', maxWidth: '100%' }} />
+                    </div>
                 </div>
             </div>
             {usuario.id === post.usuario?.id ? (
@@ -50,7 +54,7 @@ function CardProdutos({ post }: CardProdutosProps) {
                     </Link>
                 </div>
 
-            ) : (<div className="text-slate-100 bg-castanha-profunda hover:bg-red-900 w-full flex items-center justify-center">
+            ) : (<div className="text-slate-100 py-4 bg-castanha-profunda hover:bg-red-900 w-full flex items-center justify-center">
                 <button>Comprar</button>
             </div>)}
 

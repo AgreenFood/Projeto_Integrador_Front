@@ -15,7 +15,7 @@ function CardCategoria({ categoria }: CardCategoriaProps) {
     if (categoria_selecionada.length > 0) {
         foto = categoria_selecionada[0].foto;
     } else {
-        foto = "https://img.freepik.com/fotos-gratis/arranjo-dos-frascos-de-alto-angulo_23-2148563195.jpg?size=626&ext=jpg&uid=R128029081&ga=GA1.1.1502328272.1700780875&semt=ais";
+        foto = "https://i.imgur.com/T9XrSyP.png";
     }
 
     return (
@@ -30,7 +30,7 @@ function CardCategoria({ categoria }: CardCategoriaProps) {
                 {categoria.tipo}
             </p>
 
-            <img src={foto} width="200" height="100" />
+            <img src={foto} width="500" height="100" />
 
 
             {/* <div className="flex">
