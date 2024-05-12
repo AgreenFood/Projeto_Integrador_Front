@@ -13,12 +13,12 @@ export default function Equipe() {
       <div className="flex grid-cols-2 h-screen">
 
         <div className='flex grid-cols-2 w-full py-20'>
-          <div className='block w-100 p-10 py-30 mx-20 mt-10' >
+          <div className='block w-100 p-10 py-39 mx-20 mt-10' >
             <Carousel className='Carousel' indicators={false} fade>
               <Carousel.Item interval={3500}>
                 <img
                   className="d-block w-100"
-                  src="https://docs.google.com/uc?id=1X2YDTq7uHOZcOhfq4VroTDyERLsXNyju"
+                  src="https://media.licdn.com/dms/image/D4D03AQGm8hHlgvVjdg/profile-displayphoto-shrink_800_800/0/1696520878977?e=1720656000&v=beta&t=Idod2gtttSoGi-15_Afneg4aql2qsJxptGSiKbirZrg"
                   alt="Elisa Souza"
                 />
 
@@ -36,7 +36,7 @@ export default function Equipe() {
               <Carousel.Item interval={3500}>
                 <img
                   className="d-block w-100"
-                  src="https://docs.google.com/uc?id=1cV51LBU_LAKH3UrdUVfxbEZHBo5_UJv4"
+                  src="https://media.licdn.com/dms/image/D4D03AQHflIyrjGSK5Q/profile-displayphoto-shrink_800_800/0/1696358800469?e=1721260800&v=beta&t=RieswSgSu03c9x1P1pSioIDy8XY0XJ6WKrqK7J5OiZ8"
                   alt="Gabriel Assis"
                 />
                 <p className='mb-4 text-black md:text-4xl lg:text-3xl text-center'>Gabriel Assis</p>
@@ -52,7 +52,7 @@ export default function Equipe() {
               <Carousel.Item interval={3500}>
                 <img
                   className="d-block w-100"
-                  src="https://docs.google.com/uc?id=14roeltlRhPAfuu4HjcH_Ot1t9dTo4ID2"
+                  src="https://media.licdn.com/dms/image/D4D03AQHRfyXfMVwkEQ/profile-displayphoto-shrink_800_800/0/1689220258384?e=1720656000&v=beta&t=aBVszJotwY3x2x1AU7VH-bzkwqo9JLiYzhW9s8bQgug"
                   alt="Katia Mendes"
                 />
                 <p className='mb-4 text-black md:text-4xl lg:text-3xl text-center'>Katia Mendes</p>
@@ -68,7 +68,7 @@ export default function Equipe() {
               <Carousel.Item interval={3500}>
                 <img
                   className="d-block w-100"
-                  src="https://docs.google.com/uc?id=1ftnqFg64PRVca_0uO4u9RwgTd3E8O4vx"
+                  src="https://media.licdn.com/dms/image/C5603AQH3A_2ejIkahQ/profile-displayphoto-shrink_800_800/0/1612988884754?e=1721260800&v=beta&t=VBUmtQ6gJ9TVCmnVDAqty8E6Ft9lxI5KEoFQoSDdl-A"
                   alt="Olavo Pessôa"
                 />
                 <p className='mb-4 text-black md:text-4xl lg:text-3xl text-center'>Olavo Pessôa</p>
@@ -84,7 +84,7 @@ export default function Equipe() {
               <Carousel.Item interval={3500}>
                 <img
                   className="d-block w-100"
-                  src="https://docs.google.com/uc?id=1T_bVO8O1mB8-6njV0eUIs0ke6HQTtW8G"
+                  src="https://media.licdn.com/dms/image/D4D03AQGRi2Fpjzn7yA/profile-displayphoto-shrink_800_800/0/1693436206525?e=1721260800&v=beta&t=ZplARDMWQGvfguWxs45U2n41422ptHag44aCqWO-QnU"
                   alt="Raphael Gomes"
                 />
                 <p className='mb-4 text-black md:text-4xl lg:text-3xl text-center'>Raphael Gomes</p>
@@ -100,7 +100,7 @@ export default function Equipe() {
               <Carousel.Item interval={3500}>
                 <img
                   className="d-block w-100"
-                  src="https://docs.google.com/uc?id=1uJgc9WsCmBdCly0sWP17ECp5-B4-siH4"
+                  src="https://media.licdn.com/dms/image/D4D03AQFUxtNOpoqjAA/profile-displayphoto-shrink_800_800/0/1697444167675?e=1721260800&v=beta&t=a4WljbsD7vS47IVAc9fRnwfqEa7AeQN8sMF_Kk8OOG8"
                   alt="Raquel Barreto"
                 />
                 <p className='mb-4 text-black md:text-4xl lg:text-3xl text-center'>Raquel Barreto</p>
@@ -128,7 +128,7 @@ export default function Equipe() {
             </p>
 
 
-            <div className='bg-android-verde border rounded py-2' style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 10)' }}>
+            <div className='bg-android-verde border rounded py-20' style={{ boxShadow: '2px 2px 5px rgba(0, 0, 0, 10)' }}>
               <p className='text-justify mt-2 w-1/2 mx-auto'>
                 Acreditamos que a agricultura orgânica é uma forma de produção sustentável que beneficia o meio ambiente, os produtores rurais e os consumidores. Os alimentos orgânicos são produzidos sem o uso de agrotóxicos, fertilizantes químicos ou outros insumos artificiais.
                 Isso os torna mais saudáveis para os consumidores e mais seguros para o meio ambiente.

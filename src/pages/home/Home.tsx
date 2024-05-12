@@ -6,7 +6,7 @@ function Home() {
 
     return (
         <>
-            <div className="home">
+            <div className="home bg-casca-ovo w-100">
 
                 <div>
                     <Carousel fade className=" flex justify-center carousel-image" indicators={false} controls={false}>
@@ -66,7 +66,7 @@ function Home() {
                     </h1>
 
                     <div className='flex items-center justify-center'>
-                        <img className='w-1/2' src="https://docs.google.com/uc?id=1t6jWYttF6px5A6m1G5lboD8kPAD3mRgT" alt="" />
+                        <img className='w-1/2' src="https://i0.wp.com/arturpereira.com.br/wp-content/uploads/2024/02/Farmer-bro.png?resize=1536%2C1536&ssl=1" alt="" />
                     </div>
                 </div>
             </div>

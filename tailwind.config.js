@@ -10,7 +10,7 @@ export default {
         'hunter-green': '#386641',
         'maio-verde': '#6A994E',
         'android-verde': '#A7C957',
-        'casca-ovo': '#F2E8CF',
+        'casca-ovo': '#e5e5e5',
         'castanha-profunda': '#BC4749',
         'verde-leve': '#92E3A9'
       },
