@@ -1,7 +1,7 @@
 {
     "categoria": [
         {
-            "id": 12,
+            "id": 4,
             "tipo": "Verduras",
             "produtos": [],
             "foto": "https://i.imgur.com/suu3DcD.png"
@@ -9,49 +9,49 @@
 
         },
         {
-            "id": 11,
+            "id": 5,
             "tipo": "Legumes",
             "produtos": [],
             "foto": "https://i.imgur.com/8M9dnIS.jpeg"
         },
         {
-            "id": 5,
+            "id": 3,
             "tipo": "Frutas",
             "produtos": [],
             "foto": "https://i.imgur.com/2fA3vV2.jpeg"
         },
         {
-            "id": 14,
+            "id": 6,
             "tipo": "Peixes",
             "produtos": [],
             "foto": "https://i.imgur.com/TuGkDPm.png"
         },
         {
-            "id": 18,
+            "id": 7,
             "tipo": "Laticínios ",
             "produtos": [],
             "foto": "https://i.imgur.com/h6JOAp8.png"
         },
         {
-            "id": 19,
+            "id": 8,
             "tipo": "Temperos",
             "produtos": [],
             "foto": "https://i.imgur.com/5vqO0bi.jpeg"
         },
         {
-            "id": 22,
+            "id": 9,
             "tipo": "Grãos",
             "produtos": [],
             "foto": "https://i.imgur.com/IK3JvAk.png"
         },
         {
-            "id": 24,
+            "id": 1,
             "tipo": "Doce Em Compota",
             "produtos": [],
             "foto": "https://i.imgur.com/T9XrSyP.png"
         },
         {
-            "id": 20,
+            "id": 2,
             "tipo": "Carnes",
             "produtos": [],
             "foto": "https://i.imgur.com/5yMsrDW.jpeg"

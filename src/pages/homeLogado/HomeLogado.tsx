@@ -15,7 +15,7 @@ function Home() {
 
                         <div className="flex justify-center">
                             <img
-                                src="https://docs.google.com/uc?id=1b_gvqTfv7UXmKQDdupy8ei8MuflR9M7a"
+                                src="https://i0.wp.com/arturpereira.com.br/wp-content/uploads/2024/02/Farmer-bro.png?resize=1536%2C1536&ssl=1"
                                 alt="Imagem da Home"
                                 width='400px'
                             />
