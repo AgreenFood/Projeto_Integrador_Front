@@ -13,9 +13,9 @@ const categorias_arquivo = data.categoria;
 function CardProdutos({ post }: CardProdutosProps) {
     const { usuario } = useContext(AuthContext)
 
-    var categoria_selecionada = categorias_arquivo.filter(item => item.tipo == post.categorias?.tipo);
+    const categoria_selecionada = categorias_arquivo.filter(item => item.tipo == post.categorias?.tipo);
 
-    var foto: string;
+    let foto: string;
 
     if (categoria_selecionada.length > 0) {
         foto = categoria_selecionada[0].foto;
@@ -27,7 +27,7 @@ function CardProdutos({ post }: CardProdutosProps) {
         <div className="border-slate-900 flex flex-col roundend overflow-hidden justify-between">
             <div>
                 <div className="flex w-full bg-verde-leve py-2 px-4 items-center gap-4">
-                    <img src="/src/assets/img/logo.svg" className="h-12 rounded-full" alt="Imagem do usuário" />
+                    <img src="https://i.imgur.com/TgC66dH.png" className="h-12 w-12 rounded-full" alt="Imagem do usuário" />
                     <h3 className="text-lg font-bold text-center uppercase">{post.usuario?.nomeCompleto}:</h3>
                 </div>
                 <div className='p-4'>
