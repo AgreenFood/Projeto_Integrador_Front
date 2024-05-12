@@ -27,7 +27,7 @@ function CardProdutos({ post }: CardProdutosProps) {
         <div className="border-slate-900 flex flex-col roundend overflow-hidden justify-between">
             <div>
                 <div className="flex w-full bg-verde-leve py-2 px-4 items-center gap-4">
-                    <img src="https://i.imgur.com/TgC66dH.png" className="h-12 w-12 rounded-full" alt="Imagem do usuário" />
+                    <img src="https://i.imgur.com/TgC66dH.png" className="h-16 w-16 rounded-full" alt="Imagem do usuário" />
                     <h3 className="text-lg font-bold text-center uppercase">{post.usuario?.nomeCompleto}:</h3>
                 </div>
                 <div className='p-4'>
