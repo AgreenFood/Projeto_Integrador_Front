@@ -22,7 +22,7 @@ function Navbar() {
             <div className="w-full bg-hunter-green text-white flex justify-around py-4">
 
                 <div className="container flex justify-between text-lg">
-                    <Link to={`/Home`}>
+                    <Link to={`/`}>
                         <img
                             src="https://i.imgur.com/TgC66dH.png"
                             alt="Logo AgreenFood"
