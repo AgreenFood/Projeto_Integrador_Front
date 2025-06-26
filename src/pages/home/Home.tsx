@@ -12,7 +12,7 @@ function Home() {
                     <Carousel fade className=" flex justify-center carousel-image" indicators={false} controls={false}>
                         <Carousel.Item interval={2500}>
                             <img
-                                src="https://i.imgur.com/zouDS2Q.jpeg"
+                                src="https://i.imgur.com/2fA3vV2.jpeg"
                                 alt="image 1"
                                 className="h-1/3 w-full object-cover"
                             />
@@ -21,7 +21,7 @@ function Home() {
 
                         <Carousel.Item interval={2500}>
                             <img
-                                src="https://i.imgur.com/kRHktkj.png"
+                                src="https://i.imgur.com/2fA3vV2.jpeg"
                                 alt="image 2"
                                 className="h-full w-full object-cover"
                             />
@@ -30,7 +30,7 @@ function Home() {
                         <Carousel.Item interval={2500}>
 
                             <img
-                                src="https://i.imgur.com/LHmPVfp.jpeg"
+                                src="https://i.imgur.com/2fA3vV2.jpeg"
                                 alt="image 3"
                                 className="h-full w-full object-cover"
                             />
