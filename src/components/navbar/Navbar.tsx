@@ -24,7 +24,7 @@ function Navbar() {
                 <div className="container flex justify-between text-lg">
                     <Link to={`/`}>
                         <img
-                            src="https://i.imgur.com/TgC66dH.png"
+                            src="https://i.imgur.com/blfvuJk.png"
                             alt="Logo AgreenFood"
                             width="75rem"
                         />
