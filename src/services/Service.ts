@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: 'https://agreenfood.onrender.com'
+    baseURL: 'https://projeto-integrador-generation.onrender.com'
 })
 
 export const login = async (url: string, dados: Object, setDados: Function) => {
